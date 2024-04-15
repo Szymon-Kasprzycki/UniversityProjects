@@ -2,7 +2,7 @@
 
 _Szymon Kasprzycki 193065, Gdańsk Univeristy of Technology_
 
-A scale of grades is set up to 3 (lowest passing) to 5 (highest possible)
+A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 
 | Subject                                   | Grade | ECTS |
 | ----------------------------------------- | ----- | ---- |
@@ -16,4 +16,4 @@ A scale of grades is set up to 3 (lowest passing) to 5 (highest possible)
 | Economics and organization of Enterprises | 4.0   | 2    |
 | Business Law                              | 4.0   | 2    |
 
-My weighted average grade for this semester was: 4.286
+**My weighted average grade for this semester was: 4.286**
