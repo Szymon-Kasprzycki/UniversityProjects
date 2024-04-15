@@ -18,9 +18,13 @@ Additional informations:
 ### Input
 
 In next lines (four lines represent one car):
+
 A number of items n.
+
 Payments of items P.
+
 Weights of items W.
+
 The maximum mass of a car C.
 
 ### Output
@@ -31,26 +35,24 @@ The optimal profit.
 ### Example
 
 **Input**
+
+```
 5
-
 588 40 307 367 206
-
 211 30 974 943 622
-
 1766
-
 1
-
 596
-
 997
-
 550
+```
 
 **Output**
-995
 
+```
+995
 0
+```
 
 ## POLSKI
 
@@ -72,9 +74,13 @@ Dodatkowe informacje:
 ### Wejście
 
 W kolejnych liniach (jeden samochód jest reprezentowany przez 4 kolejne linie).
+
 Ilość przedmiotów.
+
 Wypłaty za przedmiot.
+
 Wagi przedmiotów.
+
 Ładowność wozu.
 
 ### Wyjście
@@ -85,23 +91,21 @@ Optymalny profit.
 ### Przykład
 
 **Wejście**
+
+```
 5
-
 588 40 307 367 206
-
 211 30 974 943 622
-
 1766
-
 1
-
 596
-
 997
-
 550
+```
 
 **Wyjście**
-995
 
+```
+995
 0
+```

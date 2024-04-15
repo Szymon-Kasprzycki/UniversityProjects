@@ -16,28 +16,25 @@ The sorted sequence in non-decreasing order, separated by new lines.
 ### Example
 
 **Input**
+
+```
 5
-
 13
-
 27
-
 328
-
 111
-
 25
+```
 
 **Output**
+
+```
 13
-
 25
-
 27
-
 111
-
 328
+```
 
 ## POLSKI
 
@@ -56,25 +53,22 @@ Posortowany ciąg wyrazów w kolejności niemalejącej, rozdzielony znakiem nowe
 ### Przykład
 
 **Wejście**
+
+```
 5
-
 13
-
 27
-
 328
-
 111
-
 25
+```
 
 **Wyjście**
+
+```
 13
-
 25
-
 27
-
 111
-
 328
+```

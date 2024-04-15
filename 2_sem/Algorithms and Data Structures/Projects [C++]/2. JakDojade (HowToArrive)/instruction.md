@@ -32,53 +32,44 @@ Proszę pamiętać o odzyskiwaniu pamięci podczas usuwania elementów implement
 
 **This can be:**
 
+```
 \*GDANSK....OPOLE....RUMIA
-
 ...\*GDYNIA......_...._...
-
 _SOPOT............._....\_
-
 ...PUCK\_.\*KRAKOW.REDA.HEL
+```
 
 **This is incorrect:**
 
+```
 \*\*GDANSK..........OPOLE.
-
 .........._GDYNIA_......
-
 \*SOPOTHEL...............
-
 ........*..REDA.*PUCK\*..
+```
 
 **It is possible to arrive from point A to B:**
 
+```
 ..................
-
 A*####...#####*B..
-
 .....#.C.#........
-
 .....##\*##........
-
 ......
-
 .A\*\*B.
-
 ......
+```
 
 **It is not possible to arrive from point A to B:**
 
+```
 ....##\_B
-
 A\_##....
-
 ....##\_B
-
 A\_#_C...
-
 ....\_....
-
 A*##C##*B
+```
 
 ## Input:
 
@@ -138,61 +129,39 @@ Na wyjściu należy wypisać dla każdego zapytania jedną linię. Na początku 
 
 **Input:**
 
+```
 20 20
-
 .........GDANSK.....
-
 ........\_...........
-
 ........#...........
-
 ........#...........
-
 \_##################.
-
 #SZCZECIN.........#.
-
 #.................#.
-
 ##................#.
-
 .############\_#####.
-
 .#...WARSZAWA.......
-
 .#..................
-
 .#############......
-
 .#...........#......
-
 .#..WROCLAW.##......
-
 .#.._......._.......
-
 .####.......#KIELCE.
-
 ......\_##.#########.
-
 .OPOLE..#.\*.......#.
-
 ........#.KRAKOW..#.
-
 ........###########.
-
 0
-
 3
-
 KIELCE KRAKOW 0
-
 KRAKOW GDANSK 0
-
 KRAKOW GDANSK 1
+```
 
 **Output:**
+
+```
 5
-
 40
-
 40 KIELCE SZCZECIN
+```
