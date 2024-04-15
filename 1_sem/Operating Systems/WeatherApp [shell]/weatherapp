@@ -1,0 +1,15 @@
+.\" Manpage for Zenity Weather App.
+.\" Contact s193065@student.pg.edu.pl to correct errors or typos.
+.TH man 8 "14 January 2022" "1.1" "Zenity Weather App MAN page"
+.SH SYNOPSIS
+bash bigscript.sh [OPTIONS]
+.SH DESCRIPTION
+This is an easy wrapper for getting weather from WeatherBit API.
+.SH OPTIONS
+-h, --help  ---> Show script help
+.sp 1
+-v, --version ---> Show version and author
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Szymon Kasprzycki (s193065@student.pg.edu.pl)

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tennis SYSTEM "index.dtd">
+<tennis xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="first_project.xsd">
+    <author>
+        <name>Name</name>
+        <surname>Surname</surname>
+        <indexNumber>111111</indexNumber>
+    </author>
+    <information>
+        <text about="definitionOfTenis" source="https://en.wikipedia.org/wiki/Tennis">
+            <title>What is tennis?</title>
+            Tennis is a racket sport that is played either individually against a single opponent (singles) or between two teams of two players each (doubles). Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court. The object of the game is to manoeuvre the ball in such a way that the opponent is not able to play a valid return. The player who is unable to return the ball validly will not gain a point, while the opposite player will.
+            <image file="../html/img/main_section.jpg" source="https://pixabay.com">Tennis racket</image>
+        </text>
+        <text about="historyOfTenis" source="https://olympics.com/ioc/news/a-brief-history-of-tennis">
+            <title>Brief history of tennis</title>
+            <image file="../html/img/jeu_de_paume.jpg" source="https://en.wikipedia.org/wiki/Jeu_de_paume">Jeu de paume</image>
+            Spectacular, played today on all kinds of surfaces by tens of millions of people, for fun or in competition, tennis has spread all over the world. Designed and codified in England in the 1870s, it is the direct descendant of "jeu de paume", invented in France in the 11th century. The developments of this mediaeval sport, originally practised with bare hands, like the invention of the racket in the 16th century and the special scoring system (15, 30, 40, game), led directly to tennis, including its name, from the French word “tenez!” (in the sense of “here it comes!”), which you said to your opponent as you were about to serve.
+            The popularity of tennis in England quickly overtook that of croquet. Indeed, barely three years passed between the publication of A Portable Court of Playing Tennis by Welsh Major Walter Clopton Wingfield in 1874, the defining work in terms of codifying lawn tennis, and the holding of the first Wimbledon tournament in 1877. The decisive element introduced by Wingfield was the use of a rubber ball, which could bounce on grass.
+        </text>
+        <text about="author">
+            <title>About me</title>
+            My name is Szymon and I'm 19 years old. I play tennis since I was 14 years old. I was a member of the tennis club in my hometown. I'm a right-handed amateur player. My favourite tennis players are Iga Świątek (she went to the top recently) and Rafael Nadal.
+            <image file="../html/img/iga-swiatek.jpg" source="https://pixabay.com">Iga Świątek with trophy</image>
+            <image file="../html/img/rafael_nadal.jpg" source="https://pixabay.com">Rafael Nadal playing match</image>
+        </text>
+        <image file="../html/img/ball.png">Tennis ball</image>
+    </information>
+    <rules>
+        <rule number="1">
+            <ruleName>Object of the game</ruleName>
+            <ruleDescription>The game of tennis played on a rectangular court with a net running across the centre. The aim is to hitthe ball over the net landing the ball within the margins of the court and in a way that results in your opponent being unable to return the ball. You win a point every time your opponent is unable to return the ball within the court.</ruleDescription>
+            <ruleSource link="https://www.rulesofsport.com/sports/tennis.html">https://www.rulesofsport.com/</ruleSource>
+        </rule>
+        <rule number="2">
+            <ruleName>Players and Equipment</ruleName>
+            <ruleDescription>A tennis match can be played by either one player on each side – a singles match – or two players on each side – a doubles match. The rectangular shaped court has a base line (at the back), service areas (two spaces just over the net in which a successful serve must land in) and two tram lines down either side. A singles match will mean you use the inner side tram line and a doubles match will mean you use the outer tram line.</ruleDescription>
+            <ruleSource link="https://www.rulesofsport.com/sports/tennis.html">https://www.rulesofsport.com/</ruleSource>
+        </rule>
+        <rule number="3">
+            <ruleName>Scoring</ruleName>
+            <ruleDescription>You need to score four points to win a game of tennis. The points are known as 15 (1 point), 30 (two points), 40 (three points) and the fourth would result in the winning point and the end of that game. If the scores went to 40-40 this would be known as deuce. When a game reaches deuce the player must then win by two clear points.</ruleDescription>
+            <ruleSource link="https://www.rulesofsport.com/sports/tennis.html">https://www.rulesofsport.com/</ruleSource>
+        </rule>
+        <rule number="4">
+            <ruleName>Winning the Game</ruleName>
+            <ruleDescription>To win the game you must win a certain amount of sets (best of three for women’s matches and best of 5 sets for men’s matches). Winning a set is simply the first player to reach 6 games but have to be clear by at least 2 games. If your opponent wins 5 games you must win the set 7-5. If the set goes to 6-6 then a tie break is played and it’s simply the first player to 7 points.</ruleDescription>
+            <ruleSource link="https://www.rulesofsport.com/sports/tennis.html">https://www.rulesofsport.com/</ruleSource>
+        </rule>
+        <rule number="5">
+            <ruleName>Serving</ruleName>
+            <ruleDescription>A tennis match begins with the umpire doing a coin toss. The player who wins the toss can choose to serve, receive or pick the side from which they want to start the match. 
+            The serving player has to stand behind the baseline of his side of the tennis court and within the bounds of the centre mark and the sideline. For a successful serve, the server has to toss the ball up with his non-playing hand and hit it with the racket before it bounces. The ball needs to cross the net and land within the serving area which is marked on the diagonally opposite side of the court for it to be deemed a legal serve. Each player is allowed two serves per point. If a player hits the net, or the ball’s first bounce occurs outside the serving area, it's called a service fault and the server has a second serve to initiate the point. If the server’s foot touches the baseline or goes out of bounds of the sideline, it is known as a foot fault and the server will have a second serve. If a player commits a fault on his second serve also, it is called a double fault and the receiving player gets that point.</ruleDescription>
+            <ruleSource link="https://olympics.com/en/news/tennis-rules-regulations-how-to-play-basics">https://olympics.com/</ruleSource>
+        </rule>
+    </rules>
+    <players>
+        <player sex="female">
+            <playerData>
+                <name>Iga</name>
+                <surname>Świątek</surname>
+                <country>Poland</country>
+                <age>21</age>
+                <height>1.76m</height>
+                <hand>right-handed</hand>
+                <turnedPro>2018</turnedPro>
+                <bestRank>1</bestRank>
+                <wonTournaments>18</wonTournaments>
+                <wonYears>2020 2021 2022</wonYears>
+            </playerData>
+            <image file="../html/img/players/iga.png">Iga Świątek</image>
+        </player>
+        <player sex="male">
+            <playerData>
+                <name>Rafael</name>
+                <surname>Nadal</surname>
+                <country>Spain</country>
+                <age>36</age>
+                <height>1.85m</height>
+                <hand>left-handed</hand>
+                <turnedPro>2001</turnedPro>
+                <bestRank>1</bestRank>
+                <wonTournaments>92</wonTournaments>
+                <wonYears>2005 2006 2007 2008</wonYears>
+            </playerData>
+            <image file="../html/img/players/rafa.png">Rafael Nadal</image>
+        </player>
+        <player sex="male">
+            <playerData>
+                <name>Roger</name>
+                <surname>Federer</surname>
+                <country>Switzerland</country>
+                <age>41</age>
+                <height>1.85m</height>
+                <hand>right-handed</hand>
+                <turnedPro>1998</turnedPro>
+                <bestRank>1</bestRank>
+                <wonTournaments>103</wonTournaments>
+                <wonYears>2004 2006 2007 2009</wonYears>
+            </playerData>
+            <image file="../html/img/players/roger.png">Roger Federer</image>
+        </player>
+        <player sex="female">
+            <playerData>
+                <name>Serena</name>
+                <surname>Williams</surname>
+                <country>USA</country>
+                <age>41</age>
+                <height>1.75m</height>
+                <hand>right-handed</hand>
+                <turnedPro>1995</turnedPro>
+                <bestRank>1</bestRank>
+                <wonTournaments>73</wonTournaments>
+                <wonYears>2002 2003 2005 2007</wonYears>
+            </playerData>
+            <image file="../html/img/players/serena.png">Serena Williams</image>
+        </player>
+        <player sex="male">
+            <playerData>
+                <name>Hubert</name>
+                <surname>Hurkacz</surname>
+                <country>Poland</country>
+                <age>25</age>
+                <height>1.96m</height>
+                <hand>right-handed</hand>
+                <turnedPro>2015</turnedPro>
+                <bestRank>9</bestRank>
+                <wonTournaments>5</wonTournaments>
+                <wonYears>2020 2021</wonYears>
+            </playerData>
+            <image file="../html/img/players/hubert.png">Hubert Hurkacz</image>
+        </player>
+    </players>
+    <gallery>
+        <image file="../img/gallery/1.jpg" source="https://pixabay.com">First tennis photo</image>
+        <image file="../img/gallery/2.jpg" source="https://pixabay.com">Second tennis photo</image>
+        <image file="../img/gallery/3.jpg" source="https://pixabay.com">Third tennis photo</image>
+        <image file="../img/gallery/4.jpg" source="https://pixabay.com">Fourth tennis photo</image>
+        <image file="../img/gallery/5.jpg" source="https://pixabay.com">Fifth tennis photo</image>
+        <image file="../img/gallery/6.jpg" source="https://pixabay.com">Sixth tennis photo</image>
+        <image file="../img/gallery/7.jpg" source="https://pixabay.com">Seventh tennis photo</image>
+        <image file="../img/gallery/8.jpg" source="https://pixabay.com">Eighth tennis photo</image>
+    </gallery>
+    <quiz>
+        <question type="single">
+            <questionText>How many players can be on the court during a tennis single match?</questionText>
+            <answersBank>
+                <answer>2</answer>
+                <answer>3</answer>
+                <answer>4</answer>
+                <correctAnswer>2</correctAnswer>
+            </answersBank>
+        </question>
+        <question type="textInput">
+            <questionText>What is the full name of my favourite female tennis player?</questionText>
+            <answersBank>
+                <answer>Name Surname</answer>
+                <correctAnswer>Iga Świątek</correctAnswer>
+            </answersBank>
+        </question>
+        <question type="single">
+            <questionText>What was the name of the game that turned into tennis?</questionText>
+            <answersBank>
+                <answer>Voleyball</answer>
+                <answer>Table tennis</answer>
+                <answer>Jeu de paume</answer>
+                <correctAnswer>Jeu de paume</correctAnswer>
+            </answersBank>
+        </question>
+        <question type="textInput">
+            <questionText>Your contact data:</questionText>
+            <answersBank>
+                <answer>User name</answer>
+                <answer>User email</answer>
+                <answer>user phone</answer>
+            </answersBank>
+        </question>
+        <question type="rangeInput">
+            <questionText>How would you rate this site? (Scale is from 1 to 10)</questionText>
+            <answersBank>
+                <answer>Rate:</answer>
+            </answersBank>
+        </question>
+    </quiz>
+</tennis>

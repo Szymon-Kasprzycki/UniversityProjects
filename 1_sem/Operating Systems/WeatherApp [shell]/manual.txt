@@ -1,0 +1,15 @@
+Manual for weather zenity script
+
+Open the script without any argument to check its work.
+For example "./bigscript.sh", remember to set it appropiate permissions by chmod.
+
+You have to enter the city and country to check weather for it.
+
+Script downloads data from WeatherBit API using my access key.
+API is limited to 50 requests per day, that may cause some issues when sending too much requests.
+
+** OPTIONS **
+-h, --help -> show help for the script
+-v, --version -> show version and author information
+
+There's also linux man file, it's named "weatherapp"

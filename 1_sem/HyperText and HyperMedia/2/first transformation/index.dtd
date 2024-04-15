@@ -1,0 +1,52 @@
+<!ELEMENT tennis (author,information,rules,players,gallery,quiz)>
+<!ATTLIST tennis
+        xmlns:xsi CDATA "http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation CDATA #REQUIRED>
+<!ENTITY % maybeImageElem "image*">
+<!ENTITY % sourceParameter "source CDATA #IMPLIED">
+<!ELEMENT author (name,surname,indexNumber*)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT indexNumber (#PCDATA)>
+<!ELEMENT information (text*,%maybeImageElem;)>
+<!ELEMENT text (#PCDATA|title|description|image)*>
+<!ATTLIST text
+        about CDATA #REQUIRED
+        %sourceParameter;>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ATTLIST image
+        file CDATA #REQUIRED
+        %sourceParameter;>
+<!ELEMENT rules (rule+)>
+<!ELEMENT rule (ruleName+,ruleDescription+,ruleSource*)>
+<!ATTLIST rule
+        number CDATA #REQUIRED>
+<!ELEMENT ruleName (#PCDATA)>
+<!ELEMENT ruleDescription (#PCDATA)>
+<!ELEMENT ruleSource (#PCDATA)>
+<!ATTLIST ruleSource
+        link CDATA #REQUIRED>
+<!ELEMENT players (player+)>
+<!ELEMENT player (playerData?,%maybeImageElem;)>
+<!ATTLIST player
+        sex (male|female) #REQUIRED>
+<!ELEMENT playerData (name?,surname?,country?,age?,height?,hand?,turnedPro?,bestRank?,wonTournaments?,wonYears?)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT hand (#PCDATA)>
+<!ELEMENT turnedPro (#PCDATA)>
+<!ELEMENT bestRank (#PCDATA)>
+<!ELEMENT wonTournaments (#PCDATA)>
+<!ELEMENT wonYears (#PCDATA)>
+<!ELEMENT gallery (image+)>
+<!ELEMENT quiz (question+)>
+<!ELEMENT question (questionText?,answersBank?)>
+<!ATTLIST question
+        type CDATA "single">
+<!ELEMENT questionText (#PCDATA)>
+<!ELEMENT answersBank ((answer+, correctAnswer*)|answer+)>
+<!ELEMENT answer (#PCDATA)>
+<!ELEMENT correctAnswer (#PCDATA)>

@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:element name="tennis">
+        <xs:complexType>
+            <xs:all>
+                <xs:element ref="author" />
+                <xs:element name="information" type="informationType"/>
+                <xs:element name="rules" type="rulesType"/>
+                <xs:element name="players" type="playersType"/>
+                <xs:element name="gallery" type="galleryType"/>
+                <xs:element name="quiz" type="quizType"/>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:Name" />
+                <xs:element name="surname" type="xs:string" />
+                <xs:element name="indexNumber" type="xs:unsignedInt" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="informationType">
+        <xs:sequence>
+            <xs:element name="text" type="textType" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="textType" mixed="true">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" minOccurs="1" maxOccurs="1" />
+            <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="about" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="definitionOfTenis"/>
+                    <xs:enumeration value="historyOfTenis"/>
+                    <xs:enumeration value="author"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute ref="source" />
+    </xs:complexType>
+
+    <xs:simpleType name="fileAttrType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".*\.(jpeg|jpg|png|gif|bmp)"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="imageType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="file" type="fileAttrType" />
+                <xs:attribute ref="source" />
+            </xs:extension>
+	    </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:attribute name="source" type="urlType"/>
+
+    <xs:simpleType name="urlType">
+        <xs:restriction base="xs:anyURI">
+            <xs:pattern value="https://.*" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="sourceType" mixed="true">
+        <xs:attribute name="link" type="urlType"/>
+    </xs:complexType>
+
+    <xs:group name="ruleGroup">
+        <xs:sequence>
+            <xs:element name="ruleName" type="shortStringType" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="ruleDescription" type="longStringType" />
+            <xs:element name="ruleSource" type="sourceType" />
+        </xs:sequence>
+    </xs:group>
+
+    <xs:complexType name="rulesType">
+        <xs:sequence>
+            <xs:element name="rule" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:group ref="ruleGroup"/>
+                    </xs:sequence>
+                    <xs:attribute name="number" type="xs:decimal" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="shortStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="150" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="longStringType">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1" />
+            <xs:maxLength value="5000" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="playersType">
+        <xs:sequence>
+            <xs:element name="player" minOccurs="1" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="playerData" type="playerDataType"/>
+                        <xs:element name="image" type="imageType" />
+                    </xs:sequence>
+                    <xs:attribute name="sex" type="sexType"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="playerDataType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:Name" />
+            <xs:element name="surname" type="xs:string" />
+            <xs:element name="country" type="xs:string" />
+            <xs:element name="age">
+                <xs:simpleType>
+                    <xs:restriction base="xs:unsignedInt">
+                        <xs:minInclusive value="1" />
+                        <xs:maxInclusive value="100" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="height" type="personHeightType" />
+            <xs:element name="hand" type="xs:string" />
+            <xs:element name="turnedPro" type="xs:unsignedShort" />
+            <xs:element name="bestRank" type="xs:unsignedShort" />
+            <xs:element name="wonTournaments" type="xs:unsignedShort" />
+            <xs:element name="wonYears" type="wonYearsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="wonYearsType">
+        <xs:restriction>
+            <xs:simpleType>
+                <xs:list>
+                    <xs:simpleType>
+                        <xs:restriction base="xs:unsignedShort">
+                            <xs:minInclusive value="1" />
+                            <xs:maxInclusive value="2022" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:list>
+            </xs:simpleType>
+            <xs:minLength value="1"></xs:minLength>
+            <xs:maxLength value="5"></xs:maxLength>
+        </xs:restriction>
+        
+    </xs:simpleType>
+
+    <xs:simpleType name="personHeightType">
+        <xs:union memberTypes="xs:string xs:decimal"/>
+    </xs:simpleType>
+
+    <xs:simpleType name="sexType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="female"/>
+            <xs:enumeration value="male"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="galleryType">
+        <xs:sequence>
+            <xs:element name="image" type="imageType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="quizType">
+        <xs:sequence>
+            <xs:element ref="question" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="shortAnswerType">
+        <xs:sequence>
+            <xs:element name="answer" type="shortStringType" minOccurs="1" maxOccurs="4"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="complexAnswerType">
+        <xs:complexContent>
+            <xs:extension base="shortAnswerType">
+                <xs:sequence>
+                    <xs:element name="correctAnswer" type="shortStringType" minOccurs="0" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="question">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="questionText" type="longStringType" />
+                <xs:choice minOccurs="1" maxOccurs="1">
+                    <xs:element name="answersBank" type="complexAnswerType"/>
+                    <xs:element name="answersBank" type="shortAnswerType" minOccurs="1" maxOccurs="1"/>
+                </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="type" type="shortStringType" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
