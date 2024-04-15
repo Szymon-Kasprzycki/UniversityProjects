@@ -14,7 +14,7 @@
 | 12    | Passed | 100    | 0.754071 | 6365              | 76                 | 17                |
 | 13    | Passed | 100    | 0.571444 | 21777             | 76                 | 17                |
 | 14    | Passed | 100    | 3.347472 | 148597            | 76                 | 17                |
-| Total | 100.0% | 6.546  | 148597   | 76                | 17                 | 17                |
+| Total |        | 100.0% | 6.546    | 148597            | 76                 | 17                |
 
 I was one of only few people that managed to pass all of the tests. Only 5 of 75 people managed to achieve appropriate results in highly efficient manner.
 
