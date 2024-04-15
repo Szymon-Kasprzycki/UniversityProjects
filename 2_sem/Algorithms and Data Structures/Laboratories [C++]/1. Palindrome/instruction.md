@@ -16,12 +16,16 @@ In the next lines joined sequences on n bits.
 
 **Input**
 6
+
 1
+
 5
 
 **Output**
 111111110011101101100001011110010010001100000000
+
 10
+
 1111111011101011000101110010100010000000
 
 ## POLSKI
@@ -40,10 +44,14 @@ W kolejnych liniach połączone ciągi odpowiadające danej liczbie n. Pamiętaj
 
 **Wejście**
 6
+
 1
+
 5
 
 **Wyjście**
 111111110011101101100001011110010010001100000000
+
 10
+
 1111111011101011000101110010100010000000

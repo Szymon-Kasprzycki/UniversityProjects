@@ -13,8 +13,9 @@ In a line (expect the first): a number of vertices and after space an adjacency 
 ### Output
 
 In the next lines one of the following digits:
-0 which mean false,
-1 which mean true.
+
+- 0 which mean false,
+- 1 which mean true.
 
 0 if a graph inlcude a claw, 1 else.
 
@@ -22,15 +23,22 @@ In the next lines one of the following digits:
 
 **Input**
 4
+
 6 001110001000110101101011100100001100
+
 6 010001101000010100001010000101100010
+
 4 0100101101000100
+
 4 0100101001010010
 
 **Output**
 0
+
 1
+
 0
+
 1
 
 ## POLSKI
@@ -49,13 +57,20 @@ W kolejnych liniach jedna z poniższych odpowiedzi. Cyfra 0 oznaczająca fałsz.
 
 **Wejście**
 4
+
 6 001110001000110101101011100100001100
+
 6 010001101000010100001010000101100010
+
 4 0100101101000100
+
 4 0100101001010010
 
 **Wyjście**
 0
+
 1
+
 0
+
 1

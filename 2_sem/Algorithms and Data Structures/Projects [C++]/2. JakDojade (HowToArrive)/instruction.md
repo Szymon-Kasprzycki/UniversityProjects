@@ -32,33 +32,52 @@ Proszę pamiętać o odzyskiwaniu pamięci podczas usuwania elementów implement
 
 **This can be:**
 
-*GDANSK....OPOLE....RUMIA
-...*GDYNIA......_...._...
-_SOPOT............._...._
-...PUCK_.*KRAKOW.REDA.HEL
-Tak nie będzie:/This is incorrect:
+\*GDANSK....OPOLE....RUMIA
+
+...\*GDYNIA......_...._...
+
+_SOPOT............._....\_
+
+...PUCK\_.\*KRAKOW.REDA.HEL
+
+**This is incorrect:**
+
 \*\*GDANSK..........OPOLE.
-..........*GDYNIA*......
-*SOPOTHEL...............
+
+.........._GDYNIA_......
+
+\*SOPOTHEL...............
+
 ........*..REDA.*PUCK\*..
 
 **It is possible to arrive from point A to B:**
 
 ..................
+
 A*####...#####*B..
+
 .....#.C.#........
+
 .....##\*##........
+
 ......
+
 .A\*\*B.
+
 ......
 
 **It is not possible to arrive from point A to B:**
 
-....##_B
-A_##....
-....##_B
-A_#_C...
-...._....
+....##\_B
+
+A\_##....
+
+....##\_B
+
+A\_#_C...
+
+....\_....
+
 A*##C##*B
 
 ## Input:
@@ -82,70 +101,98 @@ Na wyjściu należy wypisać dla każdego zapytania jedną linię. Na początku 
 ## Tests:
 
 **Tests descriptions:**
-1 - example
-2 - minimum
-3 - label reading correctness
-4 - correctness
-5 - simple test on a grid
-6 - small fan
-7 - small path
-8 - small complete graph
-9 - large map, few cities
-10 - large map, few cities
-11 - fan, array implementation may not fit in time
-12 - spiral, recursion implementation of search overflows the stack
-13 - long path, array implementation may not fit in time
-14 - many edges
+
+- 1 - example
+- 2 - minimum
+- 3 - label reading correctness
+- 4 - correctness
+- 5 - simple test on a grid
+- 6 - small fan
+- 7 - small path
+- 8 - small complete graph
+- 9 - large map, few cities
+- 10 - large map, few cities
+- 11 - fan, array implementation may not fit in time
+- 12 - spiral, recursion implementation of search overflows the stack
+- 13 - long path, array implementation may not fit in time
+- 14 - many edges
 
 ---
 
-1 - przykład
-2 - minimalny
-3 - poprawność czytania etykiet
-4 - poprawność
-5 - prosty test na kracie
-6 - mały wachlarz
-7 - mała ścieżka
-8 - mały graf pełny
-9 - duża mapa, mało miast
-10 - duża mapa, mało miast
-11 - wachlarz, implementacja z tablicą raczej nie zmieści się w czasie
-12 - spirala, rekurencja implementacja przeszukiwania przepełni stos
-13 - długa ścieżka, implementacja z tablicą raczej nie zmieści się w czasie
-14 - dużo krawędzi
+- 1 - przykład
+- 2 - minimalny
+- 3 - poprawność czytania etykiet
+- 4 - poprawność
+- 5 - prosty test na kracie
+- 6 - mały wachlarz
+- 7 - mała ścieżka
+- 8 - mały graf pełny
+- 9 - duża mapa, mało miast
+- 10 - duża mapa, mało miast
+- 11 - wachlarz, implementacja z tablicą raczej nie zmieści się w czasie
+- 12 - spirala, rekurencja implementacja przeszukiwania przepełni stos
+- 13 - długa ścieżka, implementacja z tablicą raczej nie zmieści się w czasie
+- 14 - dużo krawędzi
 
 ## Example:
 
 **Input:**
 
 20 20
+
 .........GDANSK.....
-........_...........
+
+........\_...........
+
 ........#...........
+
 ........#...........
-_##################.
+
+\_##################.
+
 #SZCZECIN.........#.
+
 #.................#.
+
 ##................#.
-.############_#####.
+
+.############\_#####.
+
 .#...WARSZAWA.......
+
 .#..................
+
 .#############......
+
 .#...........#......
+
 .#..WROCLAW.##......
+
 .#.._......._.......
+
 .####.......#KIELCE.
-......_##.#########.
+
+......\_##.#########.
+
 .OPOLE..#.\*.......#.
+
 ........#.KRAKOW..#.
+
 ........###########.
+
 0
+
 3
+
 KIELCE KRAKOW 0
+
 KRAKOW GDANSK 0
+
 KRAKOW GDANSK 1
 
 **Output:**
 5
+
 40
+
 40 KIELCE SZCZECIN

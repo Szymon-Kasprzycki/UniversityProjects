@@ -9,10 +9,11 @@ The mass of items cannot exceed C.
 Choose some packages and pack a car optimally.
 
 Additional informations:
-Maximum numeber of items: 15.
-The smallest element in P and W: 0
-The largest element in P and W: 1000
-The number of instances (cars to pack, the number of iterations of the main for loop): 500.
+
+- Maximum numeber of items: 15.
+- The smallest element in P and W: 0
+- The largest element in P and W: 1000
+- The number of instances (cars to pack, the number of iterations of the main for loop): 500.
 
 ### Input
 
@@ -31,16 +32,24 @@ The optimal profit.
 
 **Input**
 5
+
 588 40 307 367 206
+
 211 30 974 943 622
+
 1766
+
 1
+
 596
+
 997
+
 550
 
 **Output**
 995
+
 0
 
 ## POLSKI
@@ -52,12 +61,13 @@ Masa towaru w samochodzie nie może przekroczyć wartości C.
 Upakuj samochód optymalnie, tj. tak by suma wag nie przekroczyła C oraz suma złotych była największa.
 
 Dodatkowe informacje:
-Maksymalna ilość przedmiotów: 15.
-Minimalny element w P i W: 0
-Maksymalny element (największa wartość) w P i W: 1000
-Liczba testów: 1.
-Ilość zapytań (liczba iteracji głównej pętli): 500.
-Próba wstawienia wyniku - brak zaliczonego przedmiotu.
+
+- Maksymalna ilość przedmiotów: 15.
+- Minimalny element w P i W: 0
+- Maksymalny element (największa wartość) w P i W: 1000
+- Liczba testów: 1.
+- Ilość zapytań (liczba iteracji głównej pętli): 500.
+- Próba wstawienia wyniku - brak zaliczonego przedmiotu.
 
 ### Wejście
 
@@ -76,14 +86,22 @@ Optymalny profit.
 
 **Wejście**
 5
+
 588 40 307 367 206
+
 211 30 974 943 622
+
 1766
+
 1
+
 596
+
 997
+
 550
 
 **Wyjście**
 995
+
 0
