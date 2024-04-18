@@ -1,8 +1,6 @@
 # Jak Dojade?
 
-## Author:
-
-Krzysztof Ocetkiewicz
+**Author:** Krzysztof Ocetkiewicz, _Gdańsk Univeristy of Technology_
 
 ## Description:
 
