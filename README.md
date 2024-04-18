@@ -10,21 +10,20 @@
 
 # Introduction
 
-This repository is meant to store all my experience, projects, achievements acquired during learning process at Gdańsk Univeristy of Technology.
+This repository is meant to store all my experience, projects, achievements acquired during learning process at Gdańsk Univeristy of Technology.<br>
+It does not store all of the code I made during the studies, but mainly the more complex projects. We had a lots of smaller tasks but I do not include them here.
 
-University: Gdańsk University of Technology
-My field of study: Data Engineering
-Year of start: 2022/2023
-
-This reposityory does not store all of the code I made during the studies, but mainly the more complex projects. We had a lots of smaller tasks but I do not include them here.
+**Name and Surname:** Szymon Kasprzycki <br>
+**Index number:** 193065 <br>
+**University:** Gdańsk University of Technology<br>
+**My field of study:** Data Engineering<br>
+**Year of start:** 2022/2023
 
 # Studies Grades
 
-_Szymon Kasprzycki 193065, Gdańsk Univeristy of Technology_
-
 A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 
-## 1st Semester
+### 1st Semester
 
 | Subject                                   | Grade | ECTS |
 | ----------------------------------------- | ----- | ---- |
@@ -39,8 +38,10 @@ A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 | Business Law                              | 4.0   | 2    |
 
 **My weighted average grade for this semester was: 4.286**
+<br>
+<br>
 
-## 2nd Semester
+### 2nd Semester
 
 | Subject                                 | Grade | ECTS |
 | --------------------------------------- | ----- | ---- |
@@ -56,8 +57,10 @@ A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 | Object Programming                      | 4.5   | 3    |
 
 **My weighted average grade for this semester was: 4.339**
+<br>
+<br>
 
-## 3rd Semester
+### 3rd Semester
 
 | Subject                                         | Grade | ECTS |
 | ----------------------------------------------- | ----- | ---- |
@@ -74,8 +77,10 @@ A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 | Technical Physics                               | 5.0   | 5    |
 
 **My weighted average grade for this semester was: 4.839**
+<br>
+<br>
 
-## 4th Semester
+### 4th Semester
 
 **TBA 06.2024...**
 
