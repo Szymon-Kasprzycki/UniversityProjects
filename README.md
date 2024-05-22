@@ -13,8 +13,6 @@
 This repository is meant to store all my experience, projects, achievements acquired during learning process at Gdańsk Univeristy of Technology.<br>
 It does not store all of the code I made during the studies, but mainly the more complex projects. We had a lots of smaller tasks but I do not include them here.
 
-**Name and Surname:** Szymon Kasprzycki <br>
-**Index number:** 193065 <br>
 **University:** Gdańsk University of Technology<br>
 **My field of study:** Data Engineering<br>
 **Year of start:** 2022/2023
