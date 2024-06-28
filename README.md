@@ -80,17 +80,19 @@ A scale of grades is scaled from 3 (lowest passing) to 5 (highest possible)
 
 ### 4th Semester
 
-**TBA 06.2024...**
-
 | Subject                           | Grade | ECTS |
 | --------------------------------- | ----- | ---- |
-| Artificial intelligence           | -     | 5    |
-| Business process modelling        | -     | 3    |
-| Corporate finance                 | -     | 3    |
-| Data mining                       | -     | 3    |
-| Data warehouses                   | -     | 4    |
-| English III                       | -     | 2    |
-| Human-computer interaction        | -     | 4    |
-| Introduction to cognitive science | -     | 3    |
-| Marketing research                | -     | 3    |
-| Sport                             | -     | 0    |
+| Artificial intelligence           | 5.0   | 5    |
+| Business process modelling        | 5.0   | 3    |
+| Corporate finance                 | 5.0   | 3    |
+| Data mining                       | 5.0   | 3    |
+| Data warehouses                   | 5.0   | 4    |
+| English III                       | 4.5   | 2    |
+| Human-computer interaction        | 5.0   | 4    |
+| Introduction to cognitive science | 3.5   | 3    |
+| Marketing research                | 4.5   | 3    |
+| Sport                             | 5.0   | 0    |
+
+**My weighted average grade for this semester was: 4.767**
+<br>
+<br>
